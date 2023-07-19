@@ -21,9 +21,7 @@ export class MembersListComponent implements OnInit {
   }
 
   private getMembers() {
-    this.members.push("Bartosz Zebrowski")
-
-    this.http.get<any>("link").subscribe(response => {
+    this.http.get<any>("http://localhost:7071/api/GetMembers").subscribe(response => {
       this.members = response
     })
   }

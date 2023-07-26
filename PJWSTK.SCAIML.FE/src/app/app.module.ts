@@ -13,16 +13,17 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MembersComponent } from './components/members/members.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { PostPageComponent } from './pages/post-page/post-page.component';
 
 
 @NgModule({
   declarations: [
-  
     LayoutComponent,
-       NavbarComponent,
-       MembersComponent,
-       HomePageComponent,
-       AboutUsComponent
+    NavbarComponent,
+    MembersComponent,
+    HomePageComponent,
+    AboutUsComponent,
+    PostPageComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,7 @@ import { MembersComponent } from './components/members/members.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { PostPageComponent } from './pages/post-page/post-page.component';
+import { AddPostPageComponent } from './pages/add-post-page/add-post-page.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { PostPageComponent } from './pages/post-page/post-page.component';
     MembersComponent,
     HomePageComponent,
     AboutUsComponent,
-    PostPageComponent
+    PostPageComponent,
+    AddPostPageComponent
   ],
   imports: [
     BrowserModule,

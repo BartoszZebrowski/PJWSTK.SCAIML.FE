@@ -1,0 +1,27 @@
+<div class="memberIndex row">
+    <p>Index:</p>  <input type="text" [value]="memberIndex">
+</div>
+
+<div class="title row">
+    <p>Tytuł:</p> <input type="text" [value]="title">
+</div>
+
+<div class="descritpion row">
+    <p>Krótki opis:</p> <textarea type="textarea" rows="4" cols="50" [value]="descritpion"></textarea>
+</div>
+
+<div class="content row">
+    <p>Post:</p> <input type="file" [(ngModel)]="content" accept=".html">
+</div>
+
+<div class="photos row">
+    <p>Zdjęcia do postu:</p> <input type="file" [value]="photos" accept=".png" multiple>
+</div>
+
+<div class="mainPhoto row">
+    <p>Główne zdjęcie:</p> <input type="file" [value]="mainPhoto" accept=".png">
+</div>
+
+<div>
+    <button (click)="sendPost()">Wyślij</button>
+</div>

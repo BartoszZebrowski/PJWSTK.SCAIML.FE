@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 //layouts
 
@@ -13,6 +14,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MembersComponent } from './components/members/members.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { PostsComponent } from './components/posts/posts.component';
 
 
 @NgModule({
@@ -22,12 +24,14 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
        NavbarComponent,
        MembersComponent,
        HomePageComponent,
-       AboutUsComponent
+       AboutUsComponent,
+       PostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [LayoutComponent]

@@ -3,29 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 //layouts
-import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 
 //pages
-import { PostPageComponent } from './pages/post-page/post-page.component';
-import { HomePageComponent } from './pages/home-page/home-page.component';
 
 //comonents
 import { AppRoutingModule } from './app-routing.module';
-import { MembersListComponent } from './components/members-list/members-list.component';
+import { LayoutComponent } from './layout/layout.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MembersComponent } from './components/members/members.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-import { PostsComponent } from './components/posts/posts.component';
-import { PostComponent } from './components/post/post.component';
 
 
 @NgModule({
   declarations: [
-    MembersListComponent,
-    AboutUsComponent,
-    MainLayoutComponent,
-    PostPageComponent,
-    HomePageComponent,
-    PostsComponent,
-    PostComponent
+  
+    LayoutComponent,
+       NavbarComponent,
+       MembersComponent,
+       HomePageComponent,
+       AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +30,6 @@ import { PostComponent } from './components/post/post.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [MainLayoutComponent]
+  bootstrap: [LayoutComponent]
 })
 export class AppModule { }

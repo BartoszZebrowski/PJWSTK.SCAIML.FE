@@ -1,0 +1,20 @@
+@import '../../../variables';
+
+:host
+{
+    display: flex;
+    justify-content: end;
+    //flex-direction: column;
+
+    .container-posts
+    {
+        min-height: 500px;
+        width: 70%;
+        padding: 2rem;
+
+        background-color: $secondary-color;
+
+        border-radius: 1.5rem;
+    }
+}
+

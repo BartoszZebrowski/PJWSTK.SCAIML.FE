@@ -1,0 +1,22 @@
+:host
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .post-container
+    {
+        display: flex;
+        flex-direction: column;
+
+        height: 400px;
+        width: 95%;
+
+        background-color: red;
+
+        .post-container-image
+        {
+            width: 100%;
+        }
+    }
+}

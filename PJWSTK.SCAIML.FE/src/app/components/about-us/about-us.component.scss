@@ -1,7 +1,15 @@
+@import '../../../variables';
+
+:host
+{
+    display: flex;
+    justify-content: end;
+}
+
 .left-content
 {
     width: 70%;
-    padding: 2rem;
+    padding: 3.5rem;
 
     background-color: $secondary-color;
 

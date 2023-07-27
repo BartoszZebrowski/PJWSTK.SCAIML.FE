@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Post } from 'src/app/Models/Post/Post';
+
+//import {Post} from "../../Models/Post";
 
 @Component({
   selector: 'app-posts',
@@ -28,11 +31,11 @@ export class PostsComponent implements OnInit {
   }
 }
 
-interface Post
-{
-  id: string,
-  memberIndex: string,
-  title: string,
-  description: string,
-  mainPhoto: string
-}
+// interface Post
+// {
+//   id: string,
+//   memberIndex: string,
+//   title: string,
+//   description: string,
+//   mainPhoto: string
+// }
